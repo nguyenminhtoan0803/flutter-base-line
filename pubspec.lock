@@ -36,20 +36,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.10.0"
-  auto_size_text_pk:
-    dependency: transitive
-    description:
-      name: auto_size_text_pk
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.0.0"
-  binding:
-    dependency: "direct main"
-    description:
-      name: binding
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   bloc:
     dependency: transitive
     description:
@@ -279,13 +265,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.6.0"
-  flutter_svg:
-    dependency: "direct main"
-    description:
-      name: flutter_svg
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.1.6"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -303,6 +282,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.0"
+  get_it:
+    dependency: "direct main"
+    description:
+      name: get_it
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "7.2.0"
   glob:
     dependency: transitive
     description:
@@ -464,20 +450,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.2"
-  path_drawing:
-    dependency: transitive
-    description:
-      name: path_drawing
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.1"
-  path_parsing:
-    dependency: transitive
-    description:
-      name: path_parsing
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.1"
   path_provider:
     dependency: "direct main"
     description:
@@ -854,20 +826,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
-  velocity_x:
-    dependency: "direct main"
-    description:
-      name: velocity_x
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.6.0"
-  vxstate:
-    dependency: transitive
-    description:
-      name: vxstate
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.3.0"
   watcher:
     dependency: transitive
     description:
