@@ -19,6 +19,17 @@ const List<Color> colorList = [
   Color(0xFF7CB342),
   Color(0xFFC0CA33),
 ];
+const headLine1 = TextStyle(fontSize: 20, fontWeight: FontWeight.w900);
+
+const headLine2 = TextStyle(fontSize: 18, fontWeight: FontWeight.bold, overflow: TextOverflow.ellipsis);
+
+const headLine3 = TextStyle(fontSize: 17, fontWeight: FontWeight.w700, overflow: TextOverflow.ellipsis);
+
+const headLine4 = TextStyle(fontSize: 16, fontWeight: FontWeight.w700, overflow: TextOverflow.ellipsis);
+
+const headLine5 = TextStyle(fontSize: 15, fontWeight: FontWeight.w700);
+
+const headLine6 = TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: Colors.grey, overflow: TextOverflow.ellipsis);
 
 const focusedBorder = OutlineInputBorder(
   borderSide: BorderSide(color: Colors.black54, width: 2.0),

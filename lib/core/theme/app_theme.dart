@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../api_string.dart';
+import 'package:demo/common/resources/Strings.dart';
 import '../style/app_style.dart';
 
 class AppTheme {
@@ -33,7 +33,7 @@ class AppTheme {
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: Color(0xFFF4511E),
     ),
-    fontFamily: AppString.appFont,
+    fontFamily: Strings.appFont,
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
         foregroundColor: Colors.black54,
