@@ -28,8 +28,14 @@ class _AlertDialogInforState extends State<AlertDialogInfor> {
           title:  Text(widget.title),
           content: Text(widget.content),
           actions: <Widget>[
-
-
+            TextButton(
+              onPressed: () => Navigator.pop(context, 'Cancel'),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, 'OK'),
+              child: const Text('OK'),
+            ),
           ],
         ),
       ),
@@ -45,7 +51,7 @@ class AlertDialogError extends StatefulWidget {
   final Widget? buttonCancel;
 
   //constructor
-  const AlertDialogError(this.buttonCancel, this.buttonContinue,{Key? key, required this.title, required this.content})
+  const AlertDialogError({Key? key, required this.title, required this.content, this.buttonCancel, this.buttonContinue})
       : super(key: key);
 
   @override

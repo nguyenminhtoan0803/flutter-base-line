@@ -14,7 +14,7 @@ extension StringExtension on String {
 
 extension GeneralExtension<T> on T {
   bool get isEnum {
-    final split = toString().split('.');
+    final List<String> split = toString().split('.');
     return split.length > 1 && split[0] == runtimeType.toString();
   }
 
@@ -32,7 +32,7 @@ extension IterableExtension<T> on Iterable<T> {
 extension MapExtension on Map{
   String get format {
     if (isEmpty) {
-      return "";
+      return '';
     } else {
       var firstKey = entries.first.key;
       var mapValues = entries.first.value;
@@ -43,7 +43,7 @@ extension MapExtension on Map{
 
 //helper function
 void pop(BuildContext context, int returnedLevel) {
-  for(var i = 0; i < returnedLevel; ++i){
+  for(int i = 0; i < returnedLevel; ++i){
     Navigator.pop(context, true);
   }
 }

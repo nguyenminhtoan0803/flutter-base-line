@@ -58,6 +58,10 @@ dependencies:
   dartz: ^0.10.1
   rxdart: ^0.27.7
   get: ^4.6.5
+  firebase_core: ^2.4.0
+  table_calendar: ^3.0.8 #using calender
+  fl_chart: ^0.55.2 #using draw chart
+  freezed: ^2.3.2
 
 dev_dependencies:
   flutter_test:

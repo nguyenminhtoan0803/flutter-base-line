@@ -1,6 +1,6 @@
 import 'package:hive_flutter/adapters.dart';
 
-part '../data/adapter/user.g.dart';
+part '../core/data/adapter/user.g.dart';
 
 @HiveType(typeId: 0)
 class User extends HiveObject {
