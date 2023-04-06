@@ -35,5 +35,4 @@ class TextInput extends StatelessWidget {
       validator: validator,
     );
   }
-
 }

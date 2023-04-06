@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'base_events.dart';
 
 abstract class BaseBloc {
-  StreamController<BaseEvent> _eventStreamController = StreamController<BaseEvent>();
+  final StreamController<BaseEvent> _eventStreamController = StreamController<BaseEvent>();
 
   Sink<BaseEvent> get event => _eventStreamController.sink;
   BaseBloc() {

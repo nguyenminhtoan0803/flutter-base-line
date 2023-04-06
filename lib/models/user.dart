@@ -1,12 +1,19 @@
-import 'package:hive_flutter/adapters.dart';
+class User {
+  late String? _username;
+  late String? _password;
 
-part '../core/data/adapter/user.g.dart';
+  User(this._username, this._password);
+  User.fromMap(dynamic obj) {
+    this._username = obj['username'];
+    this._password = obj['password'];
+  }
 
-@HiveType(typeId: 0)
-class User extends HiveObject {
-  @HiveField(0)
-  late String username;
-
-  @HiveField(1)
-  late String password;
+  String? get username => _username;
+  String? get password => _password;
+  Map<String, dynamic> toMap() {
+    var map = new Map<String, dynamic>();
+    map['username'] = _username;
+    map['password'] = _password;
+    return map;
+  }
 }
