@@ -38,7 +38,7 @@ dependencies:
   provider: ^6.0.4 # quản lý state 
   path_provider: ^2.0.11 # lấy đường dẫn path
   flutter_bloc: ^8.1.1   # connect data và presentation
-  shared_preferences: ^2.0.15 # 
+  shared_preferences: ^2.1.0 # 
   source_gen: ^1.2.6          # generator source 
   url_launcher: ^6.1.6        # using get url 
   http: ^0.13.5               # using get api
