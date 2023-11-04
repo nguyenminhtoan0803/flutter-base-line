@@ -1,4 +1,3 @@
-import 'package:demo/views/login/login.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -8,9 +7,6 @@ void main() async {
   );
 }
 final routes = {
-  '/login':(BuildContext context) => new Login(),
-  '/':(BuildContext context) => new Login(),
-
 };
 
 class MyApp extends StatelessWidget {
@@ -21,8 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sqflite App',
-      theme: ThemeData(primarySwatch: Colors.teal),
-      routes: routes,
+      theme: ThemeData(primarySwatch: Colors.teal)
     );
   }
 }

@@ -55,7 +55,8 @@ dependencies:
   get: ^4.6.5
   fl_chart: ^0.55.2 #using draw chart
   freezed: ^2.3.2
-  sqflite: ^2.2.6
+  sqflite: ^2.3.0
+  path: ^1.8.3
 
 dev_dependencies:
   flutter_test:
