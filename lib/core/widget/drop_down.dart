@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../core/app_extension.dart';
 
 class DropDown<T> extends StatefulWidget {
   final ValueChanged<T> onChanged;
@@ -19,13 +18,6 @@ class DropDown<T> extends StatefulWidget {
 
 class _DropDownState<T> extends State<DropDown<T>> {
   T? selectedItem;
-
-  String checkType(T item) {
-    if (item.isEnum) {
-      return item.getEnumString;
-    }
-    return item.toString();
-  }
 
   @override
   void initState() {
@@ -50,9 +42,9 @@ class _DropDownState<T> extends State<DropDown<T>> {
             .map(
               (item) => DropdownMenuItem<T>(
                 value: item,
-                child: Text(
-                  checkType(item),
-                  style: const TextStyle(fontSize: 15),
+                child: const Text(
+                  "",
+                  style: TextStyle(fontSize: 15),
                 ),
               ),
             )

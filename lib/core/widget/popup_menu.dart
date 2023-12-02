@@ -1,4 +1,3 @@
-import '../../core/app_extension.dart';
 import 'package:flutter/material.dart';
 
 class PopupMenu<T> extends StatelessWidget {
@@ -13,10 +12,6 @@ class PopupMenu<T> extends StatelessWidget {
   final ValueChanged<T> onChanged;
   final IconData? icon;
 
-  String checkType(T item) {
-    if (item.isEnum) return item.getEnumString;
-    return item.toString();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +29,8 @@ class PopupMenu<T> extends StatelessWidget {
             .map(
               (T item) => PopupMenuItem<T>(
             value: item,
-            child: InkWell(
-              child: Text(checkType(item)),
+            child: const InkWell(
+              child: Text(""),
             ),
           ),
         )
