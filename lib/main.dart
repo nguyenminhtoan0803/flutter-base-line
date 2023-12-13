@@ -1,23 +1,47 @@
+import 'package:demo/controllers/theme/ThemesController.dart';
+import 'package:demo/core/theme/app_theme.dart';
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:demo/AppBinding.dart';
+import 'package:demo/routers/Routers.dart';
+import 'package:get_storage/get_storage.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  runApp(
-    const MyApp(),
-  );
+  await GetStorage.init();
+  runApp(App());
 }
-final routes = {
-};
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  App({super.key});
+  final ThemesController themesController = Get.put(ThemesController());
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Sqflite App',
-      theme: ThemeData(primarySwatch: Colors.teal)
+      title: 'Flutter e commere app',
+      theme: AppTheme.lightAppTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: getThemeMode(themesController.theme),
+      getPages: Routes.routes,
+      initialRoute: Routes.INITIAL,
+      initialBinding: AppBinding(),
     );
+  }
+
+  ThemeMode getThemeMode(String type) {
+    ThemeMode themeMode = ThemeMode.system;
+    switch(type) {
+      case "system":
+        themeMode = ThemeMode.system;
+        break;
+      case "dark":
+        themeMode = ThemeMode.dark;
+        break;
+      default:
+        themeMode = ThemeMode.light;
+        break;
+    }
+    return themeMode;
   }
 }

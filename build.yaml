@@ -1,8 +1,24 @@
 targets:
   $default:
     builders:
-      source_gen:combining_builder:
+#      source_gen:combining_builder:
+#        enabled: true
+#        options:
+#          build_extensions:
+#            '^lib/models/{{}}.dart': 'lib/models/data/generated/{{}}.g.dart'
+      freezed|freezed:
         enabled: true
+        generate_for:
+          include:
+            - lib/models/**.dart
         options:
           build_extensions:
-            '^lib/models/{{}}.dart': 'lib/core/data/adapter/{{}}.g.dart'
+            '^lib/models/{{}}.dart': 'lib/models/data/generated/{{}}.freezed.dart'
+#      json_serializable:
+#        enabled: true
+#        generate_for:
+#          include:
+#            - lib/models/**.dart
+#        options:
+#          build_extensions:
+#            '^lib/models/{{}}.dart': 'lib/models/data/generated/{{}}.g.dart'

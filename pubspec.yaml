@@ -37,24 +37,32 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   provider: ^6.0.4 # quản lý state 
   path_provider: ^2.0.11 # lấy đường dẫn path
-  flutter_bloc: ^8.1.1   # connect data và presentation
   shared_preferences: ^2.1.0 # 
-  url_launcher: ^6.1.6        # using get url 
   http: ^1.1.2               # using get api
   flutter_local_notifications: ^16.2.0  # hiển thị thông báo
   permission_handler: ^11.1.0 #setting quyền truy cập
   logger: ^2.0.2+1 # flutter logger 
   pull_to_refresh: ^2.0.0  # using list data
   flutter_launcher_icons: ^0.13.1
-  intl: ^0.18.1 # using format datetime, parsing
+  intl: ^0.19.0 # using format datetime, parsing
   get_it: ^7.2.0
-  rxdart: ^0.27.7
   get: ^4.6.5
   fl_chart: ^0.65.0 #using draw chart
   path: ^1.8.3
   google_fonts: ^6.1.0
   get_storage: ^2.1.1
   dartz: ^0.10.1
+  sqflite: ^2.3.0
+  cloud_firestore: ^4.13.3
+  freezed_annotation: ^2.4.1
+  carousel_slider: ^4.2.1
+  cached_network_image: ^3.3.0
+  iconly: ^1.0.1
+  zoom_tap_animation: ^1.1.0
+  json_annotation: ^4.8.1
+  source_gen: ^1.4.0
+  freezed: ^2.4.5
+  json_serializable: ^6.7.1
 
 dev_dependencies:
   flutter_test:
@@ -66,7 +74,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.1
-  build_runner: ^2.3.2
+  build_runner: ^2.4.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
