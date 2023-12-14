@@ -2,7 +2,6 @@ import 'package:demo/controllers/theme/ThemesController.dart';
 import 'package:demo/core/theme/app_theme.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/AppBinding.dart';
 import 'package:demo/routers/Routers.dart';
 import 'package:get_storage/get_storage.dart';
 
@@ -25,7 +24,7 @@ class App extends StatelessWidget {
       themeMode: getThemeMode(themesController.theme),
       getPages: Routes.routes,
       initialRoute: Routes.INITIAL,
-      initialBinding: AppBinding(),
+
     );
   }
 

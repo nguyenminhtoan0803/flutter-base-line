@@ -1,10 +1,9 @@
-import 'package:demo/network/BaseProvider.dart';
-import 'package:demo/shared/typedef.dart';
+import 'package:demo/core/BaseProvider.dart';
+typedef JSON = Map<String, dynamic>;
 
 class ApiService {
   final BaseProvider _baseProvider;
   ApiService(this._baseProvider);
-
   /**
    * method get
    */

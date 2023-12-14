@@ -37,7 +37,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   provider: ^6.0.4 # quản lý state 
   path_provider: ^2.0.11 # lấy đường dẫn path
-  shared_preferences: ^2.1.0 # 
+  shared_preferences: ^2.1.0 # sahre data local maping screen
   http: ^1.1.2               # using get api
   flutter_local_notifications: ^16.2.0  # hiển thị thông báo
   permission_handler: ^11.1.0 #setting quyền truy cập
@@ -48,8 +48,7 @@ dependencies:
   get_it: ^7.2.0
   get: ^4.6.5
   fl_chart: ^0.65.0 #using draw chart
-  path: ^1.8.3
-  google_fonts: ^6.1.0
+  path: ^1.8.3 #get path
   get_storage: ^2.1.1
   dartz: ^0.10.1
   sqflite: ^2.3.0
@@ -59,10 +58,8 @@ dependencies:
   cached_network_image: ^3.3.0
   iconly: ^1.0.1
   zoom_tap_animation: ^1.1.0
-  json_annotation: ^4.8.1
   source_gen: ^1.4.0
-  freezed: ^2.4.5
-  json_serializable: ^6.7.1
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:
